@@ -1,81 +1,115 @@
-![](https://img.shields.io/badge/Microverse-blueviolet)
-
 # Bookstore: initialize project with components
 
 This is a Bookstore project setup. It ivolves creating the environment and organizing the components and pages that will be required in the developement.
 
-# Live Demo
+## Built with
 
-[Live Demo](/)
+- Create React App
 
-## Built With
+## Additional Tools
 
-- HTML5
-- CSS3
-- ES6
-- React
+- WebHint
+- Stylelint
+- ESlint
+- Webpack
 
-## Project Setup
+## Live demo
 
-To get a local copy up and running follow these simple example steps.
+You can watch [here]() a live demo of our project.
 
-### Prerequisites
+## Test
 
-- You need to have Code Editor Installed
-- Make sure Nodejs and NPM is installed in your system for linters and libraries
+To track linter errors locally follow these steps:
 
-### Setup
+Download all the dependencies run:
 
-1. Clone the repo in your local machine:
-
-```bash
-git clone https://github.com/muskan2532150/Math-Magician.git
 ```
-
-2. Open terminal and cd into project and install the dependencies
-
-```bash
-cd Math-Magician
 npm install
 ```
 
-3. run the command to open your index.html automatically in your brower:
+Track HTML linter errors run:
 
-```bash
-npm run build
-npm start
+```
+npx hint .
+```
+
+Track CSS linter errors run:
+
+```
+npx stylelint "**/*.{css,scss}"
+```
+
+Track JavaScript linter errors run:
+
+```
+npx eslint ."
 ```
 
 ## Authors
 
-### Author 1
+👤 **Petro Loltolo Lesapiti**
 
-👤 **Muskan Gupta**
+- GitHub: [@petrolesapiti](https://github.com/Loltolo-Lesapiti)
+- LinkedIn: [@petrolesapiti](https://www.linkedin.com/in/petrolesapitiloltolo/)
 
-- GitHub: [@github](https://github.com/muskan2532150)
-- Twitter: [@twitter](muskan2532150)
-- Linkedin:[Username](https://www.linkedin.com/in/muskan-gupta-869165225/)
-
-### Author 2
-
-👤 **Choice Osobor**
-
-- GitHub: [@githubhandle](https://github.com/techEmprez)
-- Twitter: [@twitterhandle](https://twitter.com/Suigeneriz_)
-- LinkedIn: [Choice Osobor](https://www.linkedin.com/in/choice-osobor/)
+## Collaborators
 
 ## 🤝 Contributing
 
 Contributions, issues, and feature requests are welcome!
 
+## Getting Started
+
+To get a local copy follow these simple steps:
+
+**Clone Your Github Repository**
+Follow these steps to clone your
+**Clone Your Github Repository**
+Follow these steps to clone my Github repo on Windows:
+
+1. Open Git Bash;
+
+- If Git is not already installed, it is super simple. Just go to the Git Download Folder and follow the instructions.
+
+2. Go to the current directory where you want the cloned directory to be added;
+
+- To do this, input cd and add your folder location. You can add the folder location by dragging the folder to Git bash.
+- $ cd '/c/Users/Documents/My Git Project'
+
+3. Go to the page of the repository that you want to clone.
+
+4. Click on “Clone or download” and copy the URL.
+5. Use the git clone command along with the copied URL from earlier;
+
+- $ git clone https://
+
+6. Press Enter;
+
+- $ git clone https://
+  Cloning into Git …
+  remote: Counting objects: 13, done.
+  remote: Compressing objects: 100% (13/13), done.
+  remove: Total 13 (delta 1), reused 0 (delta 1)
+  Unpacking objects: 100% (13/13), done.
+  **Congratulations, you have created your first local clone from your remote Github repository.**
+
+  ## 🤝 Contributing
+
+Contributions, issues, and feature requests are welcome!
+
+Feel free to check the [issues page](https://.
+
 ## Show your support
 
-Give a ⭐️ if you like this project!
+Give a ⭐ if you like this project!
 
 ## Acknowledgments
 
-- [Math Magician](https://github.com/microverseinc/curriculum-react-redux/blob/main/math-magicians/sneak_peek.md)
+- Hat tip to anyone whose code was used
+- Inspiration
+- etc
 
 ## 📝 License
 
 This project is [MIT](./MIT.md) licensed.
+_NOTE: we recommend using the [MIT license](https://choosealicense.com/licenses/mit/) - you can set it up quickly by [using templates available on GitHub](https://docs.github.com/en/communities/setting-up-your-project-for-healthy-contributions/adding-a-license-to-a-repository). You can also use [any other license](https://choosealicense.com/licenses/) if you wish._
