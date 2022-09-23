@@ -1,4 +1,6 @@
-const Categories = () => {
-  return <button className="checkStatus">Check status</button>;
-};
+const Categories = () => (
+  <button type="button" className="checkStatus">
+    Check status
+  </button>
+);
 export default Categories;
