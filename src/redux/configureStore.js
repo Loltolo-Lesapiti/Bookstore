@@ -4,7 +4,7 @@ import bookActionReducer from './books/books';
 import categoryActionReducer from './categories/categories';
 
 const reducers = combineReducers({
-  book: bookActionReducer,
+  books: bookActionReducer,
   status: categoryActionReducer,
 });
 
