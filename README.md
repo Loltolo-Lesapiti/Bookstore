@@ -1,6 +1,6 @@
-# Bookstore: initialize project with components
+# Bookstore: add reducers and actions
 
-This is a Bookstore project setup. It ivolves creating the environment and organizing the components and pages that will be required in the developement.
+in this milestone of the Bookstore app development. I configured Redux Store and wrote actions and reducer for adding and removing books.
 
 ## Built with
 
@@ -12,6 +12,7 @@ This is a Bookstore project setup. It ivolves creating the environment and organ
 - Stylelint
 - ESlint
 - Webpack
+- Redux
 
 ## Live demo
 
