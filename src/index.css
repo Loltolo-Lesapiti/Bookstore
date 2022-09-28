@@ -55,6 +55,16 @@ nav ul li {
   justify-content: center;
 }
 
+.addBook h1 {
+  text-align: center;
+}
+
+.addBook {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
 .checkStatus {
   margin: 10% 50%;
   width: 100px;
