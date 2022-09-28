@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link, Routes, Route } from 'react-router-dom';
-import Home from './components/Home';
+import BooksContainer from './components/BooksContainer';
 import Categories from './components/Categories';
 
 function App() {
@@ -9,16 +9,16 @@ function App() {
       <nav>
         <h1 className="app-title">Bookstore CMS</h1>
         <ul className="menu-list">
-          <li>
+          <li key="bookPage">
             <Link to="/">Books</Link>
           </li>
-          <li>
+          <li key="categoryPage">
             <Link to="/categories">Categories</Link>
           </li>
         </ul>
       </nav>
       <Routes>
-        <Route path="/" element={<Home />} />
+        <Route path="/" element={<BooksContainer />} />
         <Route path="/categories" element={<Categories />} />
       </Routes>
     </header>
