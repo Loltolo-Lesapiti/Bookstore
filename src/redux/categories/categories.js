@@ -1,4 +1,4 @@
-const CHECK_STATUS = 'BOOKSTORE/components/categories/CHECK_STATUS';
+const CHECK_STATUS = 'Bookstore/components/categories/CHECK_STATUS';
 // Action
 const statusAction = () => ({
   type: CHECK_STATUS,
