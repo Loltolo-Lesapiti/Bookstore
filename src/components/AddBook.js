@@ -1,14 +1,14 @@
-import uuid from "react-uuid";
-import { useState } from "react";
-import { useSelector, useDispatch } from "react-redux";
-import { addBook, deleteBook } from "../redux/books/books";
+import uuid from 'react-uuid';
+import { useState } from 'react';
+import { useSelector, useDispatch } from 'react-redux';
+import { addBook, deleteBook } from '../redux/books/books';
 
 const AddBook = () => {
   const dispatch = useDispatch();
   const bookList = useSelector((state) => state.books.value);
 
-  const [title, setTitle] = useState("");
-  const [author, setAuthor] = useState("");
+  const [title, setTitle] = useState('');
+  const [author, setAuthor] = useState('');
   return (
     <div className="addBook">
       <h1>Add Books</h1>
@@ -54,11 +54,11 @@ const AddBook = () => {
                 id: uuid(),
                 title,
                 author,
-              })
+              }),
             );
           }}
         >
-          {" "}
+          {' '}
           Add Book
         </button>
       </form>
