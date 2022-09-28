@@ -1,6 +1,6 @@
-# Bookstore: add reducers and actions
+# Bookstore: Use Redux in React components.
 
-in this milestone of the Bookstore app development. I configured Redux Store and wrote actions and reducer for adding and removing books.
+In this milestone of the Bookstore app project. I used Redux store to display books and added some UI elements to my components to make them dispatch actions. A user can add and can also remove a book on button click.
 
 ## Built with
 
