@@ -1,6 +1,6 @@
 # Bookstore: connect to API
 
-In this milestone of the Bookstore app project. I refactor the Bookstore projects code to use Bookstore API to Add and Remove a book.
+In this milestone of the Bookstore app project. I refactor the Bookstore projects code to use Bookstore API to Add and Remove a book and React for displaying the UI.
 
 ## Built with
 
