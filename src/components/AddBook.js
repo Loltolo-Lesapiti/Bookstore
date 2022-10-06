@@ -1,35 +1,16 @@
-import uuid from 'react-uuid';
-import { useState } from 'react';
-import { useSelector, useDispatch } from 'react-redux';
-import { addBook, deleteBook } from '../redux/books/books';
+import React, { useState } from "react";
+import { useDispatch } from "react-redux";
+import { v4 as uuidv4 } from "uuid";
+import { postBook } from "../redux/books/books";
 
 const AddBook = () => {
   const dispatch = useDispatch();
-  const bookList = useSelector((state) => state.books.value);
-
-  const [title, setTitle] = useState('');
-  const [author, setAuthor] = useState('');
+  const [author, setAuthor] = useState("");
+  const [title, setTitle] = useState("");
+  const [category, setCategory] = useState("");
   return (
-    <div className="addBook">
-      <h1>Add Books</h1>
-      <div className="displayBook">
-        {bookList.map((book) => (
-          <div className="booksList" key={book}>
-            <div className="book">
-              <h3 className="name">{book.title}</h3>
-              <h3 className="author">{book.author}</h3>
-            </div>
-            <button
-              type="button"
-              onClick={() => {
-                dispatch(deleteBook({ id: book.id }));
-              }}
-            >
-              Remove
-            </button>
-          </div>
-        ))}
-      </div>
+    <div className="addbook">
+      <h2>Add New Book</h2>
       <form>
         <input
           type="text"
@@ -46,23 +27,41 @@ const AddBook = () => {
             setAuthor(event.target.value);
           }}
         />
+        <select
+          required
+          id="categoryList"
+          onChange={(event) => setCategory(event.target.value)}
+        >
+          <option>Select Category</option>
+          <option>Drama</option>
+          <option>Fiction</option>
+          <option>Action</option>
+          <option>Economy</option>
+          <option>Science Fiction</option>
+        </select>
         <button
           type="button"
           onClick={() => {
-            dispatch(
-              addBook({
-                id: uuid(),
-                title,
-                author,
-              }),
-            );
+            if (title && author && category) {
+              dispatch(
+                postBook({
+                  book_id: uuidv4(),
+                  category,
+                  title,
+                  author,
+                })
+              );
+              form.reset();
+            }
           }}
         >
-          {' '}
+          {" "}
           Add Book
         </button>
       </form>
+      ;
     </div>
   );
 };
+
 export default AddBook;
