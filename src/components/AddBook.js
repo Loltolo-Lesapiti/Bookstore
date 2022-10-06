@@ -34,10 +34,8 @@ const AddBook = () => {
         >
           <option>Select Category</option>
           <option>Drama</option>
+          <option>Romance</option>
           <option>Fiction</option>
-          <option>Action</option>
-          <option>Economy</option>
-          <option>Science Fiction</option>
         </select>
         <button
           type="button"
@@ -55,11 +53,9 @@ const AddBook = () => {
             }
           }}
         >
-          {' '}
           Add Book
         </button>
       </form>
-      ;
     </div>
   );
 };

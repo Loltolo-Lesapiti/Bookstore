@@ -49,9 +49,9 @@ const bookSlice = createSlice({
     [fetchBooks.rejected]: (state, action) => action.error.message,
     [postBook.fulfilled]: (state, action) => [...state, action.payload],
     [postBook.rejected]: (state, action) => action.error.message,
-    [removeBook.fulfilled]: (state, action) => {
-      state.filter((item) => item.item_id !== action.meta.arg);
-    },
+    /* eslint-disable */
+    [removeBook.fulfilled]: (state, action) =>
+      state.filter((item) => item.item_id !== action.meta.arg),
     [removeBook.rejected]: (state, action) => action.error.message,
   },
 });
