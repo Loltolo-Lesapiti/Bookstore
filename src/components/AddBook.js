@@ -1,17 +1,17 @@
-import React, { useState } from "react";
-import { useDispatch } from "react-redux";
-import { v4 as uuidv4 } from "uuid";
-import { postBook } from "../redux/books/books";
+import React, { useState } from 'react';
+import { useDispatch } from 'react-redux';
+import { v4 as uuidv4 } from 'uuid';
+import { postBook } from '../redux/books/books';
 
 const AddBook = () => {
   const dispatch = useDispatch();
-  const [author, setAuthor] = useState("");
-  const [title, setTitle] = useState("");
-  const [category, setCategory] = useState("");
+  const [author, setAuthor] = useState('');
+  const [title, setTitle] = useState('');
+  const [category, setCategory] = useState('');
   return (
     <div className="addbook">
       <h2>Add New Book</h2>
-      <form>
+      <form className="form">
         <input
           type="text"
           name="title"
@@ -49,13 +49,13 @@ const AddBook = () => {
                   category,
                   title,
                   author,
-                })
+                }),
               );
-              form.reset();
+              document.querySelector('.form').reset();
             }
           }}
         >
-          {" "}
+          {' '}
           Add Book
         </button>
       </form>

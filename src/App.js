@@ -1,27 +1,28 @@
-import React from 'react';
-import { Link, Routes, Route } from 'react-router-dom';
-import BooksContainer from './components/BooksContainer';
+import { Link, Route, Routes } from 'react-router-dom';
 import Categories from './components/Categories';
+import Books from './components/Display';
 
 function App() {
   return (
-    <header>
-      <nav>
-        <h1 className="app-title">Bookstore CMS</h1>
-        <ul className="menu-list">
-          <li key="bookPage">
-            <Link to="/">Books</Link>
+    <div>
+      <header>
+        <h1>Bookstore CMS</h1>
+        <ul>
+          <li>
+            <Link to="/books">Books</Link>
           </li>
-          <li key="categoryPage">
+          <li>
             <Link to="/categories">Categories</Link>
           </li>
         </ul>
-      </nav>
-      <Routes>
-        <Route path="/" element={<BooksContainer />} />
-        <Route path="/categories" element={<Categories />} />
-      </Routes>
-    </header>
+      </header>
+      <main>
+        <Routes>
+          <Route path="/books" element={<Books />} />
+          <Route path="/categories" element={<Categories />} />
+        </Routes>
+      </main>
+    </div>
   );
 }
 
