@@ -1,6 +1,6 @@
 # Bookstore: initialize project with components
 
-This is a Bookstore project setup. It ivolves creating the environment and organizing the components and pages that will be required in the developement.
+This is a Bookstore project setup. It ivolves creating the environment and organizing the components and pages that will be required in the developement. Dev Branch
 
 ## Built with
 
