@@ -6,6 +6,8 @@
 
 /* Styling Header */
 header {
+  display: flex;
+  justify-content: space-around;
   height: 60px;
   width: 100vw;
   position: fixed;
@@ -13,49 +15,45 @@ header {
   margin-left: 0;
 }
 
-nav {
-  display: flex;
-  justify-content: space-around;
-}
-
-nav ul {
+header ul {
   list-style: none;
   display: flex;
   gap: 20px;
 }
 
-nav ul li {
+header ul li {
   text-decoration: none;
   font-size: 18px;
   font-weight: bold;
 }
 
-/** Styling books display */
-.Home h1 {
+.addbook {
+  margin: 5% 25%;
+}
+
+.addbook h2 {
   text-align: center;
 }
 
-.Home ul {
-  list-style: none;
-}
-
-.book {
+.addbook form {
   display: flex;
   gap: 20px;
-  justify-content: center;
 }
 
-.booksList button {
-  margin-left: 45%;
-}
-
-.addBook form {
+.bookContainer {
   display: flex;
+  flex-direction: column;
+  align-items: center;
   gap: 20px;
-  justify-content: center;
 }
 
-.checkStatus {
-  margin: 10% 50%;
-  width: 100px;
+.BookDetails {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+.bookBtns {
+  display: flex;
+  gap: 10px;
 }

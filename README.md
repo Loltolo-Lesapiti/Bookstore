@@ -1,6 +1,10 @@
-# Bookstore: initialize project with components
+# Bookstore: connect to API
 
+<<<<<<< HEAD
 This is a Bookstore project setup. It ivolves creating the environment and organizing the components and pages that will be required in the developement. Dev Branch
+=======
+In this milestone of the Bookstore app project. I refactor the Bookstore projects code to use Bookstore API to Add and Remove a book and React for displaying the UI.
+>>>>>>> 59b66c683488ab66152e64f568525430cba06e86
 
 ## Built with
 
@@ -12,6 +16,7 @@ This is a Bookstore project setup. It ivolves creating the environment and organ
 - Stylelint
 - ESlint
 - Webpack
+- Redux
 
 ## Live demo
 
