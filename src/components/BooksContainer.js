@@ -10,24 +10,49 @@ const BookContainer = ({ bookList }) => {
     <div>
       {bookList.map((book) => (
         <div key={book.item_id}>
-          <div className="bookContainer">
-            <div className="BookDetails">
-              <span className="School-of">{book.category}</span>
-              <span className="Tittle">{book.title}</span>
-              <span className="author">{book.author}</span>
+          <div className="Lesson-Panel">
+            <div className="bookContainer">
+              <div className="BookDetails">
+                <span className="School-of">{book.category}</span>
+                <span className="Tittle">{book.title}</span>
+                <span className="author">{book.author}</span>
+              </div>
+              <div className="bookBtns">
+                <span type="button">Comments</span>
+                <div className="Line-2"></div>
+                <span
+                  type="button"
+                  id={book.item_id}
+                  onClick={(event) => dispatch(removeBook(event.target.id))}
+                >
+                  Remove
+                </span>
+                <div className="Line-2"></div>
+                <span type="button">Edit</span>
+              </div>
             </div>
-            <div className="bookBtns">
-              <button type="button">Comments</button>
-              <div className="Line-2"></div>
-              <button
-                type="button"
-                id={book.item_id}
-                onClick={(event) => dispatch(removeBook(event.target.id))}
-              >
-                Remove
-              </button>
-              <div className="Line-2"></div>
-              <button type="button">Edit</button>
+            <div className="progress">
+              <div className="Oval-2">
+                <svg viewBox="0 0 36 36" className="circular-chart">
+                  <path
+                    className="circle"
+                    stroke-dasharray="60, 100"
+                    d="M18 2.0845
+      a 15.9155 15.9155 0 0 1 0 31.831
+      a 15.9155 15.9155 0 0 1 0 -31.831"
+                  />
+                </svg>
+              </div>
+              <div className="flex-col">
+                <span className="-Percent-Complete">64%</span>
+                <span className="Completed Text-Style-2">Completed</span>
+              </div>
+            </div>
+            <div className="Line-2"></div>
+            <div className="flex-col">
+              <span className="Current-Chapter">Current Chapter</span>
+              <span className="Current-Lesson Text-Style-4">Chapter 17</span>
+              <span className="Update-progress">Update progress</span>
             </div>
           </div>
         </div>
