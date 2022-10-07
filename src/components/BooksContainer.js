@@ -1,7 +1,7 @@
-import React from 'react';
-import PropTypes from 'prop-types';
-import { useDispatch } from 'react-redux';
-import { removeBook } from '../redux/books/books';
+import React from "react";
+import PropTypes from "prop-types";
+import { useDispatch } from "react-redux";
+import { removeBook } from "../redux/books/books";
 
 const BookContainer = ({ bookList }) => {
   const dispatch = useDispatch();
@@ -18,9 +18,12 @@ const BookContainer = ({ bookList }) => {
                 <span className="author">{book.author}</span>
               </div>
               <div className="bookBtns">
-                <button type="button">Comments</button>
+                <button className="Btns" type="button">
+                  Comments
+                </button>
                 <div className="Line-2" />
                 <button
+                  className="Btns"
                   type="button"
                   id={book.item_id}
                   onClick={(event) => dispatch(removeBook(event.target.id))}
@@ -28,7 +31,9 @@ const BookContainer = ({ bookList }) => {
                   Remove
                 </button>
                 <div className="Line-2" />
-                <button type="button">Edit</button>
+                <button type="button" className="Btns">
+                  Edit
+                </button>
               </div>
             </div>
             <div className="progress">
@@ -67,7 +72,7 @@ BookContainer.propTypes = {
       author: PropTypes.string,
       title: PropTypes.string,
       category: PropTypes.string,
-    }),
+    })
   ).isRequired,
 };
 
