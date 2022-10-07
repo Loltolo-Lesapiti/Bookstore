@@ -13,12 +13,16 @@ const Books = () => {
   }, [booksList.length, dispatch]);
 
   return (
-    <div className="displayContainer">
-      {booksList.length > 0 ? (
-        <BookContainer bookList={booksList} />
-      ) : (
-        <h3 className="bookContainer">The store is empty</h3>
-      )}
+    <div className="main_container">
+      <div>
+        <div className="BooksDisplay">
+          {booksList.length > 0 ? (
+            <BookContainer bookList={booksList} />
+          ) : (
+            <h3 className="Lesson-Panel">The store is empty</h3>
+          )}
+        </div>
+      </div>
       <AddBook />
     </div>
   );

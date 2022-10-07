@@ -5,16 +5,25 @@ import Books from './components/Display';
 function App() {
   return (
     <div>
-      <header>
-        <h1>Bookstore CMS</h1>
-        <ul>
-          <li>
-            <Link to="/books">Books</Link>
-          </li>
-          <li>
-            <Link to="/categories">Categories</Link>
-          </li>
-        </ul>
+      <header className="panel-bg">
+        <div className="navigation">
+          <span className="Bookstore-CMS">Bookstore CMS</span>
+          <ul>
+            <li>
+              <Link to="/books" className="BOOKS Text-Style-3">
+                Books
+              </Link>
+            </li>
+            <li>
+              <Link to="/categories" className="CATEGORIES Text-Style-3">
+                Categories
+              </Link>
+            </li>
+          </ul>
+        </div>
+        <div className="Oval">
+          <i className="fas">&#xf406;</i>
+        </div>
       </header>
       <main>
         <Routes>
