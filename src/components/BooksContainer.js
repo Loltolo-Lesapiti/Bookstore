@@ -1,7 +1,7 @@
-import React from "react";
-import PropTypes from "prop-types";
-import { useDispatch } from "react-redux";
-import { removeBook } from "../redux/books/books";
+import React from 'react';
+import PropTypes from 'prop-types';
+import { useDispatch } from 'react-redux';
+import { removeBook } from '../redux/books/books';
 
 const BookContainer = ({ bookList }) => {
   const dispatch = useDispatch();
@@ -72,7 +72,7 @@ BookContainer.propTypes = {
       author: PropTypes.string,
       title: PropTypes.string,
       category: PropTypes.string,
-    })
+    }),
   ).isRequired,
 };
 
