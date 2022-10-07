@@ -1,4 +1,4 @@
-const CHECK_STATUS = "Bookstore/components/categories/CHECK_STATUS";
+const CHECK_STATUS = 'Bookstore/components/categories/CHECK_STATUS';
 // Action
 const statusAction = () => ({
   type: CHECK_STATUS,
@@ -7,7 +7,7 @@ const statusAction = () => ({
 const categoryActionReducer = (state = [], action) => {
   switch (action.type) {
     case CHECK_STATUS:
-      return "Under construction";
+      return 'Under construction';
     default:
       return state;
   }

@@ -1,13 +1,13 @@
-import React, { useState } from "react";
-import { useDispatch } from "react-redux";
-import { v4 as uuidv4 } from "uuid";
-import { postBook } from "../redux/books/books";
+import React, { useState } from 'react';
+import { useDispatch } from 'react-redux';
+import { v4 as uuidv4 } from 'uuid';
+import { postBook } from '../redux/books/books';
 
 const AddBook = () => {
   const dispatch = useDispatch();
-  const [author, setAuthor] = useState("");
-  const [title, setTitle] = useState("");
-  const [category, setCategory] = useState("");
+  const [author, setAuthor] = useState('');
+  const [title, setTitle] = useState('');
+  const [category, setCategory] = useState('');
   return (
     <div className="add_Form_Container">
       <span className="addForm">ADD NEW BOOK</span>
@@ -47,9 +47,9 @@ const AddBook = () => {
                   category,
                   title,
                   author,
-                })
+                }),
               );
-              document.querySelector(".form").reset();
+              document.querySelector('.form').reset();
             }
           }}
         >

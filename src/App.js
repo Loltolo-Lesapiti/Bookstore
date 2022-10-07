@@ -1,6 +1,6 @@
-import { Link, Route, Routes } from "react-router-dom";
-import Categories from "./components/Categories";
-import Books from "./components/Display";
+import { Link, Route, Routes } from 'react-router-dom';
+import Categories from './components/Categories';
+import Books from './components/Display';
 
 function App() {
   return (

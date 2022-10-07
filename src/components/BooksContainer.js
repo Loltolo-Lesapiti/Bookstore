@@ -1,7 +1,7 @@
-import React from "react";
-import PropTypes from "prop-types";
-import { useDispatch } from "react-redux";
-import { removeBook } from "../redux/books/books";
+import React from 'react';
+import PropTypes from 'prop-types';
+import { useDispatch } from 'react-redux';
+import { removeBook } from '../redux/books/books';
 
 const BookContainer = ({ bookList }) => {
   const dispatch = useDispatch();
@@ -18,17 +18,17 @@ const BookContainer = ({ bookList }) => {
                 <span className="author">{book.author}</span>
               </div>
               <div className="bookBtns">
-                <span type="button">Comments</span>
-                <div className="Line-2"></div>
-                <span
+                <button type="button">Comments</button>
+                <div className="Line-2" />
+                <button
                   type="button"
                   id={book.item_id}
                   onClick={(event) => dispatch(removeBook(event.target.id))}
                 >
                   Remove
-                </span>
-                <div className="Line-2"></div>
-                <span type="button">Edit</span>
+                </button>
+                <div className="Line-2" />
+                <button type="button">Edit</button>
               </div>
             </div>
             <div className="progress">
@@ -36,7 +36,7 @@ const BookContainer = ({ bookList }) => {
                 <svg viewBox="0 0 36 36" className="circular-chart">
                   <path
                     className="circle"
-                    stroke-dasharray="60, 100"
+                    strokeDasharray="60, 100"
                     d="M18 2.0845
       a 15.9155 15.9155 0 0 1 0 31.831
       a 15.9155 15.9155 0 0 1 0 -31.831"
@@ -48,7 +48,7 @@ const BookContainer = ({ bookList }) => {
                 <span className="Completed Text-Style-2">Completed</span>
               </div>
             </div>
-            <div className="Line-2"></div>
+            <div className="Line-2" />
             <div className="flex-col">
               <span className="Current-Chapter">Current Chapter</span>
               <span className="Current-Lesson Text-Style-4">Chapter 17</span>
@@ -67,7 +67,7 @@ BookContainer.propTypes = {
       author: PropTypes.string,
       title: PropTypes.string,
       category: PropTypes.string,
-    })
+    }),
   ).isRequired,
 };
 
