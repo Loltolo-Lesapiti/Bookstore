@@ -143,6 +143,7 @@
   color: #4386bf;
   cursor: pointer;
   align-items: center;
+  border: none;
 }
 
 ::placeholder {
@@ -198,7 +199,7 @@
 }
 
 .Current-Chapter {
-  width: 7.875rem;
+  width: 9rem;
   height: 1.125rem;
   opacity: 0.5;
   font-family: RobotoSlab, sans-serif;

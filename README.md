@@ -1,6 +1,6 @@
-# Bookstore: connect to API
+# Bookstore: styling
 
-In this milestone of the Bookstore app project. I refactor the Bookstore projects code to use Bookstore API to Add and Remove a book and React for displaying the UI.
+In this milestone of the Bookstore app project. I used CSS and Zeplin as a collaboration tool to style the Bookstore project.
 
 ## Built with
 
