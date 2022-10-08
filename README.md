@@ -16,7 +16,7 @@ In this milestone of the Bookstore app project. I used CSS and Zeplin as a colla
 
 ## Live demo
 
-You can watch [here](https://unrivaled-sprinkles-46a634.netlify.app/books) a live demo of our project.
+You can watch [here](https://unrivaled-sprinkles-46a634.netlify.app) a live demo of our project.
 
 ## Test
 
