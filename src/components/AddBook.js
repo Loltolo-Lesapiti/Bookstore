@@ -9,8 +9,8 @@ const AddBook = () => {
   const [title, setTitle] = useState('');
   const [category, setCategory] = useState('');
   return (
-    <div className="addbook">
-      <h2>Add New Book</h2>
+    <div className="add_Form_Container">
+      <span className="addForm">ADD NEW BOOK</span>
       <form className="form">
         <input
           type="text"
@@ -32,7 +32,7 @@ const AddBook = () => {
           id="categoryList"
           onChange={(event) => setCategory(event.target.value)}
         >
-          <option>Select Category</option>
+          <option>Category</option>
           <option>Drama</option>
           <option>Romance</option>
           <option>Fiction</option>
